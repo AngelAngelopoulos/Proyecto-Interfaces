@@ -17,8 +17,10 @@ namespace Drive_Thru
     {
         Timer t;
         Automovil[] autos;
-        Rectangle[] autoSprites;
+        AutoSprite[] autoSprites;
+        Image[] imgAutos;
         Pen pen;
+        //int[] numAuto;
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +32,33 @@ namespace Drive_Thru
             t.Tick += T_Tick;
             //Color de la pluma del rectangulo (cuando se cambie por imagen no se necesitara)
             pen = new Pen(Color.Red);
+
+            /* numAuto = new int[]
+             {
+                 new Random().Next(1,5),
+                 new Random().Next(1,5),
+                 new Random().Next(1,5)
+             };*/
+
+            imgAutos = new Image[]
+            {
+                //Image.FromFile(@"C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\auto1.png"),
+                Image.FromFile("auto1.png"),
+                Image.FromFile("auto2.png"),
+                Image.FromFile("auto3.png"),
+                Image.FromFile("auto4.png"),
+                Image.FromFile("auto5.png")
+            };
+
+            //Decalaramos los sprites (imagenes) de los autos que van a pasar
+            autoSprites = new AutoSprite[]
+            {
+                //Se declaran tres, con estas separaciones, debido al ancho y largo de la ventana
+                new AutoSprite(new Random().Next(5), new Rectangle(-100, 75, 200, 100)),
+                new AutoSprite(new Random().Next(5), new Rectangle(-100, 250, 200, 100)),
+                new AutoSprite(new Random().Next(5), new Rectangle(-100, 425, 200, 100))
+            };
+
 
             //Declaramos el arreglo de Autos (hilos) que van a pasar
             autos = new Automovil[]
@@ -45,15 +74,6 @@ namespace Drive_Thru
                 autos[i].initHilo();
             }
 
-            //Decalaramos los sprites (imagenes) de los autos que van a pasar
-            autoSprites = new Rectangle[]
-            {
-                //Se declaran tres, con estas separaciones, debido al ancho y largo de la ventana
-                new Rectangle(-100, 75, 200, 100),
-                new Rectangle(-100, 250, 200, 100),
-                new Rectangle(-100, 425, 200, 100)
-            };
-            
             //Inicializamos el Timer y con ello los Ticks 
             t.Start();
         }
@@ -67,10 +87,10 @@ namespace Drive_Thru
                 if (autos[i].estado)
                 {
                     //movemos las coordenadas en x del auto
-                    autoSprites[i].X += autos[i].vel;
+                    autoSprites[i].fitImg.X += autos[i].vel;
 
                     //Si llega a la caseta
-                    if (autoSprites[i].X > 300)
+                    if (autoSprites[i].fitImg.X >= 290)
                     {
                         //se detiene el auto
                         autos[i].move = false;
@@ -80,10 +100,10 @@ namespace Drive_Thru
                 else if (!autos[i].move)
                 {
                     //manten el auto donde esta
-                    autoSprites[i].X = autoSprites[i].X;
+                    autoSprites[i].fitImg.X = autoSprites[i].fitImg.X;
                 }
                 //si el auto llega al final de la carretera
-                if (autoSprites[i].X > 1200)
+                if (autoSprites[i].fitImg.X > 1200)
                 {
                     //termina el hilo del ese auto
                     autos[i].termina = true;
@@ -100,15 +120,15 @@ namespace Drive_Thru
                     /*Aqui se instancian los sprites, segun que auto(hilo) se halla termnado*/
                     if (i == 0)
                     {
-                        autoSprites[i] = new Rectangle(-100, 75, 200, 100);
+                        autoSprites[i] = new AutoSprite(new Random().Next(5), new Rectangle(-100, 75, 200, 100));
                     }
                     else if (i == 1)
                     {
-                        autoSprites[i] = new Rectangle(-100, 250, 200, 100);
+                        autoSprites[i] = new AutoSprite(new Random().Next(5), new Rectangle(-100, 250, 200, 100));
                     }
                     else if (i == 2)
                     {
-                        autoSprites[i] = new Rectangle(-100, 425, 200, 100);
+                        autoSprites[i] = new AutoSprite(new Random().Next(5), new Rectangle(-100, 425, 200, 100));
                     }
                 }
                 
@@ -148,10 +168,23 @@ namespace Drive_Thru
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            //e.Graphics.DrawImageUnscaled(background, 0, 0);
             //Recorre y dibuja cada auto (sprite)
             for (int i = 0; i < autoSprites.Length; i++)
             {
-                e.Graphics.DrawRectangle(pen, autoSprites[i]);
+                //e.Graphics.DrawRectangle(pen, autoSprites[i]);
+                if (autoSprites[i].noImg == 4)
+                {
+                    e.Graphics.DrawImageUnscaledAndClipped(imgAutos[autoSprites[i].noImg],
+                        new Rectangle(autoSprites[i].fitImg.X,
+                        autoSprites[i].fitImg.Y,
+                        300, 100));
+                }
+                else
+                {
+                    e.Graphics.DrawImageUnscaledAndClipped(imgAutos[autoSprites[i].noImg],
+                   autoSprites[i].fitImg);
+                }
             }
         }
     }

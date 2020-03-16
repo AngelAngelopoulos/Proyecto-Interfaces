@@ -7,3 +7,12 @@
 \\Mac\Home\Documents\Drive Thru\obj\Debug\Drive Thru.csproj.GenerateResource.cache
 \\Mac\Home\Documents\Drive Thru\obj\Debug\Drive Thru.exe
 \\Mac\Home\Documents\Drive Thru\obj\Debug\Drive Thru.pdb
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\bin\Debug\Drive Thru.exe.config
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\bin\Debug\Drive Thru.exe
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\bin\Debug\Drive Thru.pdb
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\obj\Debug\Drive Thru.csprojAssemblyReference.cache
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\obj\Debug\Drive_Thru.Form1.resources
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\obj\Debug\Drive_Thru.Properties.Resources.resources
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\obj\Debug\Drive Thru.csproj.GenerateResource.cache
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\obj\Debug\Drive Thru.exe
+C:\Users\angelalvarado\Source\Repos\AngelAngelopoulos\Proyecto-Interfaces\Drive Thru\obj\Debug\Drive Thru.pdb

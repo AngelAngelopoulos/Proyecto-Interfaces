@@ -34,7 +34,7 @@ namespace Drive_Thru
             //Console.WriteLine(tiempo);
 
             //seteamos su velocidad de manera aleatoria
-            vel = new Random().Next(1, 20);
+            vel = new Random().Next(5, 15);
 
             //Inicializamos el estado a falso (variable auxiliar)
             estado = false;
