@@ -1,0 +1,11 @@
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\bin\Debug\netcoreapp3.1\Merge Sort Paralelo.exe
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\bin\Debug\netcoreapp3.1\Merge Sort Paralelo.deps.json
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\bin\Debug\netcoreapp3.1\Merge Sort Paralelo.runtimeconfig.json
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\bin\Debug\netcoreapp3.1\Merge Sort Paralelo.runtimeconfig.dev.json
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\bin\Debug\netcoreapp3.1\Merge Sort Paralelo.dll
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\bin\Debug\netcoreapp3.1\Merge Sort Paralelo.pdb
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\obj\Debug\netcoreapp3.1\Merge Sort Paralelo.csprojAssemblyReference.cache
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\obj\Debug\netcoreapp3.1\Merge Sort Paralelo.AssemblyInfoInputs.cache
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\obj\Debug\netcoreapp3.1\Merge Sort Paralelo.AssemblyInfo.cs
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\obj\Debug\netcoreapp3.1\Merge Sort Paralelo.dll
+C:\Users\angelalvarado\source\repos\AngelAngelopoulos\Proyecto-Interfaces\Merge Sort Paralelo\obj\Debug\netcoreapp3.1\Merge Sort Paralelo.pdb
