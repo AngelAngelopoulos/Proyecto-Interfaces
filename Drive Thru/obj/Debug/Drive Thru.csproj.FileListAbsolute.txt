@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\Drive Thru\bin\Debug\Drive Thru.exe.config
+\\Mac\Home\Documents\Drive Thru\bin\Debug\Drive Thru.exe
+\\Mac\Home\Documents\Drive Thru\bin\Debug\Drive Thru.pdb
+\\Mac\Home\Documents\Drive Thru\obj\Debug\Drive Thru.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Drive Thru\obj\Debug\Drive_Thru.Form1.resources
+\\Mac\Home\Documents\Drive Thru\obj\Debug\Drive_Thru.Properties.Resources.resources
+\\Mac\Home\Documents\Drive Thru\obj\Debug\Drive Thru.csproj.GenerateResource.cache
+\\Mac\Home\Documents\Drive Thru\obj\Debug\Drive Thru.exe
+\\Mac\Home\Documents\Drive Thru\obj\Debug\Drive Thru.pdb
