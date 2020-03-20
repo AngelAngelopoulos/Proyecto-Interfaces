@@ -11,7 +11,6 @@ namespace Merge_Sort_Paralelo
         private int[] datos;
         private Thread[] hilos = new Thread[4];
 
-        //Se crea la matriz
         public MergeSort(int siz)
         {
             size = siz;
@@ -19,7 +18,6 @@ namespace Merge_Sort_Paralelo
             llenar();
         }
 
-        // Se llena la matriz
         public void llenar()
         {
             Random sRan = new Random();
@@ -38,7 +36,7 @@ namespace Merge_Sort_Paralelo
             Console.WriteLine(" ");
         }
 
-        // Método ejecutado por el padre
+        // Método del hilo principal
         public void ordena()
         {
             // Se crean los hilos
@@ -66,15 +64,13 @@ namespace Merge_Sort_Paralelo
 
         public void merge(int l, int m, int h)
         {
-            // Se crean los arreglos auxiliares
+            
             int[] izquierdo = new int[m - l + 1];
             int[] derecho = new int[h - m];
 
-            // Se definen los limites de los arreglos auxiliares
             int n1 = m - l + 1;
             int n2 = h - m, i, j;
 
-            // Vaciado de datos en los arreglos auxiliares
             for (i = 0; i < n1; i++)
                 izquierdo[i] = datos[i + l];
 
@@ -84,7 +80,6 @@ namespace Merge_Sort_Paralelo
             int k = l;
             i = j = 0;
 
-            // Se realiza el merge, de izquierda a derecha, en orden ascendente
             while (i < n1 && j < n2)
             {
                 if (izquierdo[i] <= derecho[j])
@@ -93,7 +88,6 @@ namespace Merge_Sort_Paralelo
                     datos[k++] = derecho[j++];
             }
 
-            // Se coloca el resto de los datos
             while (i < n1)
             {
                 datos[k++] = izquierdo[i++];
@@ -107,7 +101,6 @@ namespace Merge_Sort_Paralelo
 
         public void merge_sort(int l, int h)
         {
-            // Se calcula el valor medio
             int m = l + (h - l) / 2;
             if (l < h)
             {
